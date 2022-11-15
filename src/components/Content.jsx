@@ -35,31 +35,29 @@ const Wrapper = styled.div `
   padding: 0 60px;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   gap: 20px;
+
+  @media (max-width: 400px) {
+    padding: 20px;
+  }
 
   .news-item {
     padding: 20px;
     min-height: 214px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 300px 1fr;
     gap: 30px;
-
     background: #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @media (max-width: 800px) {
-      /* .news-image {
-        img {
-          width: 100%;
-        }
-      } */
+      grid-template-columns: 1fr;
     }
 
     .news-image {
-
       img {
-        width: 300px;
-        height: 172px;
+        width: 100%;
+        height: 100%;
         object-fit: cover;
       }
     }

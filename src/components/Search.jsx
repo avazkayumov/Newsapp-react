@@ -64,7 +64,7 @@ function Search() {
             />
           </Stack>
         </LocalizationProvider>
-        <TextField inputRef={inputValue} id="outlined-basic" label="Outlined" variant="outlined" />
+        <TextField inputRef={inputValue} id="outlined-basic" label="Theme" variant="outlined" />
         <Button onClick={valueHandler} variant="outlined" style={{width: "120px"}}>Search</Button>
       </div>
     </Wrapper>
