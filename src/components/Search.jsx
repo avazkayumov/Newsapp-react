@@ -16,7 +16,6 @@ function Search() {
   const inputValue = useRef()
   const dispatch = useDispatch()
 
-  console.log(inputValue)
 
   const [valueFrom, setValueFrom] = React.useState(dayjs(moment().startOf('month').format('YYYY-MM-DD hh:mm')));
   const [valueTo, setValueTo] = React.useState(dayjs(moment().day(6).format('YYYY-MM-DD hh:mm')));
@@ -79,6 +78,7 @@ const Wrapper = styled.div `
     gap: 40px;
     padding: 50px 100px;
     flex-wrap: wrap;
+    margin-bottom: 20px;
 
     .calendar-wrapper {
       display: flex;
@@ -90,7 +90,7 @@ const Wrapper = styled.div `
       gap: 20px;
     }
     
-    @media(max-width: 400px) {
+    @media(max-width: 500px) {
       padding: 20px;
     }
   }

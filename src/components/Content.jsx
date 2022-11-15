@@ -6,7 +6,6 @@ import { fetchNews } from '../store/actions'
 function Content() {
   const dispatch = useDispatch()
   const news = useSelector(store => store.data.data)
-  console.log(news);
 
   useEffect(() => {
     dispatch(fetchNews())

@@ -4,3 +4,4 @@ import newsSlice from './reducer'
 export const store = configureStore({
   reducer: newsSlice,
 })
+
